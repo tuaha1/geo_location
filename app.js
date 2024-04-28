@@ -6,7 +6,14 @@ const app = express();
 
 // Define a route
 app.get('/', (req, res) => {
-    res.send('Hello, Express!');
+
+    const funnyResponse = {
+        name: "Bashayar",
+        best_friend: "Manar",
+        interests: ["micro service", "ciam"]
+    };
+
+    res.json(funnyResponse);
 });
 
 // Set up the server to listen on a specific port
